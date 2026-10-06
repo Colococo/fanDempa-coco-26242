@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "Carne Suave",
+    "descripcion": "Clásica empanada argentina de carne vacuna picada, cebolla, huevo duro y aceitunas, condimentos suaves.",
+    "precio": 1200.00,
+    "imagen": "https://example.com",
+    "stock": 150
+  },
+  {
+    "id": 2,
+    "nombre": "Carne Cuchillo Picante",
+    "descripcion": "Carne vacuna cortada a cuchillo, cebolla de verdeo, comino, pimentón y un toque de ají molido picante.",
+    "precio": 1300.00,
+    "imagen": "https://example.com",
+    "stock": 90
+  },
+  {
+    "id": 3,
+    "nombre": "Jamón y Queso",
+    "descripcion": "Combinación perfecta de jamón cocido en cubos y abundante queso muzzarella derretido.",
+    "precio": 1100.00,
+    "imagen": "https://example.com",
+    "stock": 200
+  },
+  {
+    "id": 4,
+    "nombre": "Pollo a la Crema",
+    "descripcion": "Pechuga de pollo desmenuzada, salteada con cebolla, morrón y una suave salsa crema.",
+    "precio": 1200.00,
+    "imagen": "https://example.com",
+    "stock": 120
+  },
+  {
+    "id": 5,
+    "nombre": "Humita",
+    "descripcion": "Relleno cremoso de choclo dulce (maíz), cebolla, salsa blanca y queso muzzarella.",
+    "precio": 1150.00,
+    "imagen": "https://example.com",
+    "stock": 80
+  },
+  {
+    "id": 6,
+    "nombre": "Verdura y Queso",
+    "descripcion": "Hojas de espinaca fresca salteadas con cebolla, queso parmesano y muzzarella hildada.",
+    "precio": 1150.00,
+    "imagen": "https://example.com",
+    "stock": 95
+  },
+  {
+    "id": 7,
+    "nombre": "Roquefort con Apio y Nuez",
+    "descripcion": "Intenso queso azul combinado con muzzarella, apio picado y trozos de nueces.",
+    "precio": 1350.00,
+    "imagen": "https://example.com",
+    "stock": 60
+  },
+  {
+    "id": 8,
+    "nombre": "Caprese",
+    "descripcion": "Queso muzzarella fundido, tomates en cubos y hojas de albahaca fresca con aceite de oliva.",
+    "precio": 1100.00,
+    "imagen": "https://example.com",
+    "stock": 140
+  },
+  {
+    "id": 9,
+    "nombre": "Cebolla y Queso (Fugazzeta)",
+    "descripcion": "Abundante cebolla blanca cortada en pluma cocinada a fuego lento con una mezcla de quesos.",
+    "precio": 1100.00,
+    "imagen": "https://example.com",
+    "stock": 110
+  },
+  {
+    "id": 10,
+    "nombre": "Carne Cortada a Cuchillo Dulce",
+    "descripcion": "Carne vacuna troceada a mano, cebolla blanqueada, huevo, pasas de uva y una pizca de azúcar.",
+    "precio": 1300.00,
+    "imagen": "https://example.com",
+    "stock": 75
+  }
+]

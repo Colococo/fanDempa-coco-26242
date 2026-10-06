@@ -1,0 +1,33 @@
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-list a {
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.nav-list a:hover {
+  color: var(--primary);
+}
+
+.incart {
+  margin-left: 0.4rem;
+
+  width: 22px;
+  height: 22px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+  color: white;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+}
