@@ -7,7 +7,7 @@ export const Nav = ()=> {
             <ul className="nav-list">
                 <li>
                     {/* to= es lo que se escribe en la barra de busqueda */}
-                    <Link to={"/"}>Catalogo</Link>
+                    <Link to={"/"}>Menú</Link>
                 </li>
                 <li>
                     <Link to={"/cart"}>Tu Pedido</Link>
