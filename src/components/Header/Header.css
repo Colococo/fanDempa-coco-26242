@@ -1,12 +1,11 @@
 header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
-
   padding: 1rem 3rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo-container a {
@@ -16,7 +15,7 @@ header {
 }
 
 .logo-container img {
-  width: 65px;
+  width: 70px;
 }
 
 .logo-container span {
