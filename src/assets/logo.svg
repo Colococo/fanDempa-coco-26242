@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <path id="arcTop" d="M60,250 A190,190 0 0 1 440,250"/>
+    <path id="arcBottom" d="M37,250 A213,213 0 0 0 463,250"/>
+  </defs>
+
+  <!-- Aro exterior -->
+  <circle cx="250" cy="250" r="244" fill="#ffffff" stroke="#5b2a0e" stroke-width="6"/>
+  <circle cx="250" cy="250" r="232" fill="none" stroke="#5b2a0e" stroke-width="2"/>
+
+  <!-- Banda naranja inferior -->
+  <path d="M76.8,350 A200,200 0 0 0 423.2,350" fill="none" stroke="#5b2a0e" stroke-width="58" stroke-linecap="round"/>
+  <path d="M76.8,350 A200,200 0 0 0 423.2,350" fill="none" stroke="#e8952f" stroke-width="50" stroke-linecap="round"/>
+
+  <!-- Círculo interior -->
+  <circle cx="250" cy="245" r="158" fill="#5b2a0e"/>
+  <circle cx="250" cy="245" r="152" fill="#f9dfb0" stroke="#e8952f" stroke-width="10"/>
+
+  <!-- Texto superior -->
+  <text font-family="'Arial Black', 'Montserrat', Arial, sans-serif" font-weight="900" font-size="48" fill="#5b2a0e" letter-spacing="2">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">TEXTO DEL LOGO</textPath>
+  </text>
+
+  <!-- Eslogan inferior -->
+  <text font-family="'Arial', 'Montserrat', sans-serif" font-weight="700" font-size="34" fill="#ffffff" letter-spacing="9">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">ESLOGAN AQUÍ</textPath>
+  </text>
+
+  <!-- Silueta del estado -->
+  <path d="M166,150 L334,144 L342,152 L330,162 L318,170 L306,180 L294,190 L172,194 L176,186 L169,178 L174,170 L167,162 L171,156 Z"
+        fill="#5b2a0e"/>
+
+  <!-- Empanada izquierda -->
+  <g transform="translate(200,295) rotate(-18)">
+    <path d="M-92,0 A92,80 0 0 1 92,0 Q0,30 -92,0 Z" fill="#eda341" stroke="#7a3a10" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M-84,-6 A84,72 0 0 1 84,-6" fill="none" stroke="#7a3a10" stroke-width="18" stroke-linecap="round"/>
+    <path d="M-84,-6 A84,72 0 0 1 84,-6" fill="none" stroke="#d9852a" stroke-width="12" stroke-linecap="round" stroke-dasharray="6 9"/>
+    <path d="M-50,-30 Q0,-55 50,-30" fill="none" stroke="#f8c878" stroke-width="7" stroke-linecap="round"/>
+    <path d="M-60,-5 Q0,15 60,-5" fill="none" stroke="#c9741f" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Empanada derecha -->
+  <g transform="translate(300,295) rotate(18)">
+    <path d="M-92,0 A92,80 0 0 1 92,0 Q0,30 -92,0 Z" fill="#eda341" stroke="#7a3a10" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M-84,-6 A84,72 0 0 1 84,-6" fill="none" stroke="#7a3a10" stroke-width="18" stroke-linecap="round"/>
+    <path d="M-84,-6 A84,72 0 0 1 84,-6" fill="none" stroke="#d9852a" stroke-width="12" stroke-linecap="round" stroke-dasharray="6 9"/>
+    <path d="M-50,-30 Q0,-55 50,-30" fill="none" stroke="#f8c878" stroke-width="7" stroke-linecap="round"/>
+    <path d="M-60,-5 Q0,15 60,-5" fill="none" stroke="#c9741f" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>
