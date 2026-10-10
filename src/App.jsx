@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/cart" element={<h1>Pedido</h1>} />
-          <Route path="/cart" element={<ItemDetailContainer />} />
+          <Route path="/product/:id" element={<ItemDetailContainer />} />
         </Routes>
       </main>
       <Footer />
