@@ -13,8 +13,8 @@
   --text-secondary: #756C66;
   --disabled-bg: #EAE5DC;
 
-  --primary: #FF6B00;
-  --primary-hover: #E56000;
+  --primary: #ff6b00b0;
+  --primary-hover: #f2741afa;
   --success: #2ECC71;
   --danger: #DC3545;
 }
