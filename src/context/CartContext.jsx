@@ -50,9 +50,11 @@ export const CartProvider = ({ children }) => {
   };
 
   //Vaciar el carrito
-  const clearCart = () => {
+  const clearCart = (showNotification = true) => {
     setCart([]);
-    alert(`😢 Eliminaste todos los productos de tu pedido ✅`);
+    if(showNotification) {
+      alert(`😢 Eliminaste todos los productos de tu pedido ✅`);
+    }
   };
 
   //Total de items en carrito
@@ -68,7 +70,7 @@ export const CartProvider = ({ children }) => {
   //Checkout
   const checkout = () => {
     alert("Tu compra ha sido realizada");
-    clearCart();
+    clearCart(false);
     navigate("/");
   };
 
