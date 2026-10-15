@@ -16,7 +16,7 @@
   --primary: #ff6b00b0;
   --primary-hover: #f2741afa;
   --success: #2ECC71;
-  --danger: #DC3545;
+  --danger: #C93B3B;
 }
 body {
   background-color: var(--bg);
@@ -38,7 +38,7 @@ main {
 
 h1 {
   text-align: center;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 img {
@@ -100,7 +100,7 @@ a {
 .bg-success:hover {
   filter: brightness(0.9);
 }
-
+ 
 .bg-delete:hover {
   filter: brightness(0.9);
 }

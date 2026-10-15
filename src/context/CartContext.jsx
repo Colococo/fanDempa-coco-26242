@@ -40,9 +40,11 @@ export const CartProvider = ({ children }) => {
 
   //Eliminar del carrito
   const removeItem = (id) => {
+    // find() me devuelve el objeto completo, filter me devuelve un array con la condicion !==
+    const itemToEliminate = cart.find((element) => element.id === id);
     const updatedCart = cart.filter((element) => element.id !== id);
     setCart(updatedCart);
-    alert("Producto eliminado ✅");
+    alert(`Empanada ${itemToEliminate.nombre} ELIMINADA ✅`);
   };
 
   //Vaciar el carrito
@@ -57,7 +59,7 @@ export const CartProvider = ({ children }) => {
 
   //Total a pagar
   const getCartTotal = () => {
-    return cart.reduce((acc, element) => acc + element.price, 0);
+    return cart.reduce((acc, element) => acc + element.precio, 0);
   };
 
   //Checkout
