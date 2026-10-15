@@ -31,11 +31,13 @@ export const CartProvider = ({ children }) => {
         console.log(item);
         
     //   alert("El producto ya existe en tu pedido");
-      alert(`Empanada de ${item.nombre}, ya existe en tu pedido.`);
+      alert(`⚠️ Empanada de ${item.nombre} Ya existe en tu pedido.`);
+      navigate("/");
       return;
     }
     setCart([...cart, item]);
-    alert(`Agregaste empanada de ${item.nombre} a tu pedido.`);
+    alert(`✅ Agregaste empanada de ${item.nombre} a tu pedido con EXITO !!`);
+    navigate("/");
   };
 
   //Eliminar del carrito
@@ -44,12 +46,13 @@ export const CartProvider = ({ children }) => {
     const itemToEliminate = cart.find((element) => element.id === id);
     const updatedCart = cart.filter((element) => element.id !== id);
     setCart(updatedCart);
-    alert(`Empanada ${itemToEliminate.nombre} ELIMINADA ✅`);
+    alert(`🗑️ Empanada ${itemToEliminate.nombre} ELIMINADA ✅`);
   };
 
   //Vaciar el carrito
   const clearCart = () => {
     setCart([]);
+    alert(`😢 Eliminaste todos los productos de tu pedido ✅`);
   };
 
   //Total de items en carrito
