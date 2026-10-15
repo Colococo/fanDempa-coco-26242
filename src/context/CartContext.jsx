@@ -70,6 +70,7 @@ export const CartProvider = ({ children }) => {
   //Checkout
   const checkout = () => {
     alert("Tu compra ha sido realizada");
+    // parametro false para que no imprima alert de clearCart()
     clearCart(false);
     navigate("/");
   };
