@@ -26,7 +26,7 @@ export const ItemListContainer = () => {
    
     return (
         <section>
-            <h1>Empanadas</h1>
+            <h1>Empanadas Regionales</h1>
             {/* Le pasamos a ItemList bajo la prop: products. El estado(linea 5):{products} */}
             <ItemList products={products}/>
         </section>

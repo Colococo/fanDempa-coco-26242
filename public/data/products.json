@@ -9,7 +9,7 @@
   },
   {
     "id": "2",
-    "nombre": "Carne Cuchillo Picante",
+    "nombre": "Carne cortada a cuchillo.",
     "descripcion": "Carne vacuna cortada a cuchillo, cebolla de verdeo, comino, pimentón y un toque de ají molido picante.",
     "precio": 1300.00,
     "imagen": "/img/empanadas/carnePicante.png",
@@ -17,7 +17,7 @@
   },
   {
     "id": "3",
-    "nombre": "Jamón y Queso",
+    "nombre": "Jamón y queso mozzarella",
     "descripcion": "Combinación perfecta de jamón cocido en cubos y abundante queso muzzarella derretido.",
     "precio": 1100.00,
     "imagen": "/img/empanadas/jamonQueso.png",
@@ -25,7 +25,7 @@
   },
   {
     "id": "4",
-    "nombre": "Pollo a la Crema",
+    "nombre": "Pollo a la crema",
     "descripcion": "Pechuga de pollo desmenuzada, salteada con cebolla, morrón y una suave salsa crema.",
     "precio": 1200.00,
     "imagen": "/img/empanadas/polloCrema.png",
@@ -41,7 +41,7 @@
   },
   {
     "id": "6",
-    "nombre": "Verdura y Queso",
+    "nombre": "Verdura y queso",
     "descripcion": "Hojas de espinaca fresca salteadas con cebolla, queso parmesano y muzzarella hildada.",
     "precio": 1150.00,
     "imagen": "/img/empanadas/verdura.png",
@@ -49,7 +49,7 @@
   },
   {
     "id": "7",
-    "nombre": "Roquefort con Apio y Nuez",
+    "nombre": "Roquefort con apio y nuez",
     "descripcion": "Intenso queso azul combinado con muzzarella, apio picado y trozos de nueces.",
     "precio": 1350.00,
     "imagen": "/img/empanadas/roquefort.png",
@@ -57,7 +57,7 @@
   },
   {
     "id": "8",
-    "nombre": "Caprese",
+    "nombre": "Capresse",
     "descripcion": "Queso muzzarella fundido, tomates en cubos y hojas de albahaca fresca con aceite de oliva.",
     "precio": 1100.00,
     "imagen": "/img/empanadas/capresse.png",
@@ -65,7 +65,7 @@
   },
   {
     "id": "9",
-    "nombre": "Cebolla y Queso",
+    "nombre": "Cebolla y queso",
     "descripcion": "Abundante cebolla blanca cortada en pluma cocinada a fuego lento con una mezcla de quesos.",
     "precio": 1100.00,
     "imagen": "/img/empanadas/cebollaQueso.png",
@@ -73,8 +73,8 @@
   },
   {
     "id": "10",
-    "nombre": "Fatay de Carne",
-    "descripcion": "Carne vacuna troceada a mano, cebolla blanqueada, huevo, pasas de uva y una pizca de azúcar.",
+    "nombre": "Fatay de carne",
+    "descripcion": "Carne picada, morrón rojo, limón, cebolla, condimentos suaves.",
     "precio": 1300.00,
     "imagen": "/img/empanadas/fatay.png",
     "coccion": "Horno"
