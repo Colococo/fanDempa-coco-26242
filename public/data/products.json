@@ -3,7 +3,7 @@
     "id": "1",
     "nombre": "Carne Suave",
     "descripcion": "Clásica empanada argentina de carne vacuna picada, cebolla, huevo duro y aceitunas, condimentos suaves.",
-    "precio": 1200.00,
+    "precio": 1200,
     "imagen": "/img/empanadas/carneSuave.png",
     "coccion": "Horno"
   },
@@ -11,7 +11,7 @@
     "id": "2",
     "nombre": "Carne cortada a cuchillo.",
     "descripcion": "Carne vacuna cortada a cuchillo, cebolla de verdeo, comino, pimentón y un toque de ají molido picante.",
-    "precio": 1300.00,
+    "precio": 1300,
     "imagen": "/img/empanadas/carnePicante.png",
     "coccion": "Horno"
   },
@@ -19,7 +19,7 @@
     "id": "3",
     "nombre": "Jamón y queso mozzarella",
     "descripcion": "Combinación perfecta de jamón cocido en cubos y abundante queso muzzarella derretido.",
-    "precio": 1100.00,
+    "precio": 1100,
     "imagen": "/img/empanadas/jamonQueso.png",
     "coccion": "Horno"
   },
@@ -27,7 +27,7 @@
     "id": "4",
     "nombre": "Pollo a la crema",
     "descripcion": "Pechuga de pollo desmenuzada, salteada con cebolla, morrón y una suave salsa crema.",
-    "precio": 1200.00,
+    "precio": 1200,
     "imagen": "/img/empanadas/polloCrema.png",
     "coccion": "Frita"
   },
@@ -35,7 +35,7 @@
     "id": "5",
     "nombre": "Humita",
     "descripcion": "Relleno cremoso de choclo dulce (maíz), cebolla, salsa blanca y queso muzzarella.",
-    "precio": 1150.00,
+    "precio": 1150,
     "imagen": "/img/empanadas/humita.png",
     "coccion": "Frita"
   },
@@ -43,7 +43,7 @@
     "id": "6",
     "nombre": "Verdura y queso",
     "descripcion": "Hojas de espinaca fresca salteadas con cebolla, queso parmesano y muzzarella hildada.",
-    "precio": 1150.00,
+    "precio": 1150,
     "imagen": "/img/empanadas/verdura.png",
     "coccion": "Frita"
   },
@@ -51,7 +51,7 @@
     "id": "7",
     "nombre": "Roquefort con apio y nuez",
     "descripcion": "Intenso queso azul combinado con muzzarella, apio picado y trozos de nueces.",
-    "precio": 1350.00,
+    "precio": 1350,
     "imagen": "/img/empanadas/roquefort.png",
     "coccion": "Frita"
   },
@@ -59,7 +59,7 @@
     "id": "8",
     "nombre": "Capresse",
     "descripcion": "Queso muzzarella fundido, tomates en cubos y hojas de albahaca fresca con aceite de oliva.",
-    "precio": 1100.00,
+    "precio": 1100,
     "imagen": "/img/empanadas/capresse.png",
     "coccion": "Horno"
   },
@@ -67,7 +67,7 @@
     "id": "9",
     "nombre": "Cebolla y queso",
     "descripcion": "Abundante cebolla blanca cortada en pluma cocinada a fuego lento con una mezcla de quesos.",
-    "precio": 1100.00,
+    "precio": 1100,
     "imagen": "/img/empanadas/cebollaQueso.png",
     "coccion": "Frita"
   },
@@ -75,7 +75,7 @@
     "id": "10",
     "nombre": "Fatay de carne",
     "descripcion": "Carne picada, morrón rojo, limón, cebolla, condimentos suaves.",
-    "precio": 1300.00,
+    "precio": 1300,
     "imagen": "/img/empanadas/fatay.png",
     "coccion": "Horno"
   }
