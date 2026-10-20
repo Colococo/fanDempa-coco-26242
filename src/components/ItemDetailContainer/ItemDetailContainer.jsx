@@ -1,6 +1,8 @@
 import {useParams} from "react-router-dom";
 import {useState, useEffect} from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { getProductById } from "../../services/productsService";
+
 
 export const ItemDetailContainer = ()=> {
     // useParams es de react-router-dom
@@ -15,19 +17,24 @@ export const ItemDetailContainer = ()=> {
         setLoading(true);
         setError(null);
 
-        fetch("/data/products.json")
-        .then((res)=> res.json())
-        .then((data)=> {
-            // product.id es el id del json y id es de la url useParams
-            const item = data.find((product) => (product.id === id));
-            if(item) {
-                setItemDetail(item);
-                return;
-            }
-            throw new Error("Empanada no encontrada");
-        })
-        .catch((error) => setError(error.message))
-        .finally(() => setLoading(false));
+        // fecht para consultar json
+        // fetch("/data/products.json")
+        // .then((res)=> res.json())
+        // .then((data)=> {
+        //     // product.id es el id del json y id es de la url useParams
+        //     const item = data.find((product) => (product.id === id));
+        //     if(item) {
+        //         setItemDetail(item);
+        //         return;
+        //     }
+        //     throw new Error("Empanada no encontrada");
+        // })
+
+        // consultando db firestone
+        getProductById(id)
+            .then((data) => setItemDetail(data))
+            .catch((error) => setError(error.message))
+            .finally(() => setLoading(false));
 
     }, [id]); 
 
