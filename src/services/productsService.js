@@ -1,11 +1,11 @@
 import { db } from "../firebase/config";
-import { collection, getDocs, getDoc, doc } from "firebase/firestore";
+import { collection, getDocs, getDoc, doc, query, where } from "firebase/firestore";
 
 // creo la referencia (de donde tomo los datos->de la db y de products)
 const productsRef = collection(db, "products");
 
 // *** consultamos por todos los productos ***
-export const getProducts = async ()=> {
+export const getProducts = async (coccion)=> {
     try {
         // getDocs: es una funcion que nos trae toda la info
         const snapshop = await getDocs(productsRef)
@@ -24,7 +24,7 @@ export const getProducts = async ()=> {
     }
 };
 
-//    **** consulta por ID   ******
+//    **** consulta por ID (ItemDetailContainer)  ******
 export const getProductById = async (id) => {
   try {
     // Creamos la referencia al documento
@@ -43,6 +43,31 @@ export const getProductById = async (id) => {
     }
   } catch (error) {
     console.error("Error al traer producto por ID:", error);
+    throw error;
+  }
+};
+
+
+export const getByCoccion = async (coccion) => {
+  try {
+    let queryRef;
+
+    //truthy
+    if (coccion) {
+      queryRef = query(productsRef, where("coccion", "==", coccion));
+    } else {
+      queryRef = productsRef;
+    }
+
+    // Traer los documentos:
+    const snapshot = await getDocs(queryRef);
+    //Mapeo de datos para formateo
+    const productsFormat = snapshot.docs.map((doc) => {
+      return { id: doc.id, ...doc.data() };
+    });
+    return productsFormat;
+  } catch (error) {
+    console.error("Error al filtrar productos:", error);
     throw error;
   }
 };
