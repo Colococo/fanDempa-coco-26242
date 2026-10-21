@@ -11,7 +11,13 @@ export const Nav = ()=> {
             <ul className="nav-list">
                 <li>
                     {/* to= es lo que se escribe en la barra de busqueda */}
-                    <Link to={"/"}>Menú</Link>
+                    <Link to={"/"}>Empanadas</Link>
+                </li>
+                <li>
+                    <Link to={"/coccion/horno"}>Horneadas</Link>
+                </li>                
+                <li>
+                    <Link to={"/coccion/frita"}>Fritas</Link>
                 </li>
                 <li>
                     <Link to={"/cart"}>

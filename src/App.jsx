@@ -15,6 +15,8 @@ function App() {
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/cart" element={<CartView />} />
           <Route path="/product/:id" element={<ItemDetailContainer />} />
+          {/*filtro por coccion */}
+          <Route path="/coccion/:coccion" element={<ItemListContainer />} />
         </Routes>
       </main>
       <Footer />
