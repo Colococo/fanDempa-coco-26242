@@ -6,3 +6,18 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+/* media query celular */
+@media (max-width: 600px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 0 0.75rem;
+  }
+
+  .products-container a {
+    display: block;
+    min-width: 0;
+  }
+}

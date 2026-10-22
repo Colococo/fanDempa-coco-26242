@@ -5,6 +5,8 @@ import { Footer } from './components/Footer/Footer';
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 import { CartView } from "./components/Cart/CartView";
+import { ProductFormContainer } from "./components/adminComponents/ProductForm/ProductFormContainer";
+import { ProductSuccess } from "./components/adminComponents/ProductSuccess";
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
           <Route path="/product/:id" element={<ItemDetailContainer />} />
           {/*filtro por coccion */}
           <Route path="/coccion/:coccion" element={<ItemListContainer />} />
+
+          {/* rutas admin */}
+          <Route path="/admin" element={<ProductFormContainer />} />
+          <Route path="/admin/products/success/:id" element={<ProductSuccess />} />
         </Routes>
       </main>
       <Footer />

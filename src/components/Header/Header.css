@@ -1,5 +1,11 @@
 header {
-  background: var(--surface);
+  /* fiar nav */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+
+  /* background: var(--surface); */
   border-bottom: 1px solid var(--border);
   padding: 1rem 3rem;
   display: flex;
