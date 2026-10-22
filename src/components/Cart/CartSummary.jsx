@@ -13,7 +13,7 @@ export const CartSummary = ()=> {
                 onClick={() => clearCart()}
             >
                 <span style={{ marginRight: '8px', fontSize: '14px' }}>🗑️</span>
-                Eliminar Pedido
+                Vaciar tu pedido
             </button>
             <p className="btn-group">TOTAL A PAGAR: ${total} </p>
             <button className="btn bg-success primary" onClick={checkout}>

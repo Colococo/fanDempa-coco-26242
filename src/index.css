@@ -111,3 +111,21 @@ a {
   cursor: not-allowed;
   filter: none;
 }
+
+/* boton subir imagen ProductFormUI */
+.input-file::file-selector-button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 600;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.input-file::file-selector-button:hover {
+  background: var(--primary-hover);
+}

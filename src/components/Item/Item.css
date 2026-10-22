@@ -69,3 +69,29 @@
 .card button {
   margin: 0 1rem 1rem;
 }
+
+/* media query celular */
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    max-width: none;
+    padding: 0.5rem;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.8rem;
+  }
+
+  .card-price {
+    font-size: 1rem;
+  }
+}
