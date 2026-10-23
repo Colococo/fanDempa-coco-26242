@@ -1,3 +1,5 @@
+// instale (npm install sweetalert2) sweetalert2 para reemplazar los alert.
+import Swal from "sweetalert2";
 import { createContext, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -28,15 +30,29 @@ export const CartProvider = ({ children }) => {
   const addItem = (item) => {
     // chequeando si existe item con funcion: isInCart()
     if (isInCart(item)) {
-        console.log(item);
+      console.log(item);
         
-    //   alert("El producto ya existe en tu pedido");
-      alert(`⚠️ Empanada de ${item.nombre} Ya existe en tu pedido.`);
+      Swal.fire({
+        icon: "warning",
+        title: "Ya está en tu pedido",
+        html: `<span style="color: red;">Empanada de ${item.nombre} ya existe en tu pedido.</span>`,
+        confirmButtonText: "Entendido",
+        confirmButtonColor: "#e8952f",
+      });
       navigate("/");
       return;
     }
+
     setCart([...cart, item]);
-    alert(`✅ Agregaste empanada de ${item.nombre} a tu pedido con EXITO !!`);
+    Swal.fire({
+      toast: true,
+      position: "top-end",
+      icon: "success",
+      title: `🥟 ¡Anotada! ${item.nombre} va para tu pedido.`,
+      showConfirmButton: false,
+      timer: 3500,
+      timerProgressBar: true,
+    });
     navigate("/");
   };
 
@@ -46,14 +62,30 @@ export const CartProvider = ({ children }) => {
     const itemToEliminate = cart.find((element) => element.id === id);
     const updatedCart = cart.filter((element) => element.id !== id);
     setCart(updatedCart);
-    alert(`🗑️ Empanada ${itemToEliminate.nombre} ELIMINADA ✅`);
+    Swal.fire({
+      toast: true,
+      position: "top-end",
+      icon: "info",
+      title: `👋 Chau ${itemToEliminate.nombre}, la sacamos del pedido.`,
+      showConfirmButton: false,
+      timer: 3500,
+      timerProgressBar: true,
+    });
   };
 
   //Vaciar el carrito
   const clearCart = (showNotification = true) => {
     setCart([]);
     if(showNotification) {
-      alert(`😢 Eliminaste todos los productos de tu pedido ✅`);
+      Swal.fire({
+        toast: true,
+        position: "top-end",
+        icon: "success",
+        title: "😢 Eliminaste todas las empanadas de tu pedido",
+        showConfirmButton: false,
+        timer: 3500,
+        timerProgressBar: true,
+      });
     }
   };
 
@@ -69,8 +101,14 @@ export const CartProvider = ({ children }) => {
 
   //Checkout
   const checkout = () => {
-    alert("Tu compra ha sido realizada");
-    // parametro false para que no imprima alert de clearCart()
+    Swal.fire({
+      icon: "success",
+      title: "¡Pedido confirmado! 🥟🔥",
+      text: "Tus empanadas ya están yendo al horno. ¡Gracias por tu compra!",
+      confirmButtonText: "¡A esperar! 😋",
+      confirmButtonColor: "#e8952f",
+    });
+    // false: vacía el carrito sin mostrar el aviso de clearCart()
     clearCart(false);
     navigate("/");
   };
