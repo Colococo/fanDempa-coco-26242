@@ -63,3 +63,29 @@
   width: 100%;
   margin-top: 1rem;
 }
+
+/* agregar visivilidad password */
+.login-form .password-wrapper {
+  position: relative;
+}
+
+.login-form .password-wrapper input {
+  padding-right: 2.8rem; /* lugar para el ojo */
+}
+
+.login-form .toggle-password {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: auto;      /* anula el width: 100% de .login-form button */
+  margin-top: 0;    /* anula el margin-top: 1rem */
+
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+}

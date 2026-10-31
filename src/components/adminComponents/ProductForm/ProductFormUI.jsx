@@ -1,9 +1,15 @@
-
+import { Link } from "react-router-dom";
 export const ProductFormUI = ({product, errors, loading, onChange, onFileChange, onSubmit})=> {
 
     return (
         <section>
             <form className="product-form" onSubmit={onSubmit}>
+                <div>
+                    <Link className="btn text-white btn-auto" to="/">
+                       ← Volver 
+                    </Link>
+                </div>
+
                 <h2>Agregar nueva variedad de empanada</h2>
 
                 <div>
