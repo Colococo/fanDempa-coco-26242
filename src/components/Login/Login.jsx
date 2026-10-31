@@ -11,6 +11,7 @@ export const Login = () => {
         email: "",
         password: "",
     });
+    const [showPassword, setShowPassword] = useState(false);
 
     // obtengo los valores email y contraseña del form login
     const handleChange = (e) => {
@@ -48,6 +49,29 @@ export const Login = () => {
 
             <div className="form-group">
                 <label>Password</label>
+                <div className="password-wrapper">
+                    <input
+                        type={showPassword ? "text" : "password"}
+                        name="password"
+                        placeholder="Contraseña"
+                        value={formData.password}
+                        onChange={handleChange}
+                        autoComplete="current-password"
+                        required
+                    />
+                    <button
+                        type="button"
+                        className="toggle-password"
+                        onClick={() => setShowPassword(!showPassword)}
+                        aria-label={showPassword ? "Ocultar contraseña" : "Mostrar contraseña"}
+                        >
+                        {showPassword ? "🙈" : "👁️"}
+                    </button>
+                </div>
+            </div>
+
+            {/* <div className="form-group">
+                <label>Password</label>
                 <input
                     type="password"
                     name="password"
@@ -56,7 +80,7 @@ export const Login = () => {
                     onChange={handleChange}
                     required
                 />
-            </div>
+            </div> */}
 
             <button className="btn bg-primary" type="submit">
                 Ingresar
