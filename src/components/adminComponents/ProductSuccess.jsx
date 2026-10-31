@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import "./ProductSuccess.css";
 
+// renderiza el suceso exito al cargar un producto
 export const ProductSuccess = () => {
   const { id } = useParams();
 
