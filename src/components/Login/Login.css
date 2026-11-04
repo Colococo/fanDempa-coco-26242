@@ -25,6 +25,7 @@
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 1.2rem;
+  /* margin: 1.2rem; */
 }
 
 .login-form label {

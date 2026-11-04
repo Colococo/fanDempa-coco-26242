@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import "./Login.css";
 import { useState } from "react";
@@ -33,6 +33,12 @@ export const Login = () => {
 
     return (
         <form onSubmit={handleSubmit} className="login-form">
+            <div>
+                <Link className="btn text-white btn-auto" to="/">
+                    ←Volver 
+                </Link>
+            </div>
+
             <h2>Iniciar sesión</h2>
 
             <div className="form-group">
